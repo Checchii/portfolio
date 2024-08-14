@@ -4,7 +4,12 @@
   font-style: normal;
 }
 
-.about-section {
+.profile {
+  size: 10px;
+  max-width: 50%;
+}
+
+.about-container {
   margin-top: 10rem;
   margin-left: 2rem;
   max-width: 35%;
@@ -30,4 +35,19 @@
     margin: auto;
     padding-left: 2rem;
     padding-top: 1rem;
+}
+
+.contact {
+  max-width: 35%;
+}
+
+.contact-me {
+  font-family: "Poppins", sans-serif;
+  margin-right: 16rem;
+  font-size: 1.2rem;
+  padding: 0.6rem;
+  box-shadow: 3px 3px 3px #9c9c9c;
+  border: #555;
+  border-radius: 5px;
+  cursor: pointer;
 }
