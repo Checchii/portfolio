@@ -1,0 +1,22 @@
+.navbar {
+    padding: 10px 20px;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-logo {
+    color: #2b2b2b;
+    font-size: 28px;
+    text-decoration: none;
+    margin-top: 3rem;
+    margin-left: 3rem;
+  }
+  
+  .nav-logo:hover {
+    color: #535353;
+  }
+  

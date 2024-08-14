@@ -1,0 +1,22 @@
+.about-section {
+  margin-top: 10rem;
+  margin-left: 4rem;
+  max-width: 50%;
+}
+
+.about-me {
+  font-size: 32px;
+    color: #333;
+    text-align: left;
+    margin: auto;
+    padding-left: 2rem;
+  }
+  
+  .title {
+    color: #484646;
+    font-size: 44px;
+    text-align: left;
+    margin: auto;
+    padding-left: 2rem;
+    padding-top: 1rem;
+  }
