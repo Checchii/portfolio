@@ -9,27 +9,30 @@
 }
 
 .header-image {
-  margin-left: 12rem;
-  width: 450px; 
-  height: 600px;
-  border: 10px solid hsla(0, 0%, 74%, 40%);
-  border-radius: 50%;
+  margin-top: 2rem;
+  margin-left: 15rem;
+  width: 380px; 
+  height: 550px;
+  border: 20px solid hsla(0, 0%, 74%, 40%);
+  border-radius: 45%;
   padding: 0px;
-  transform: rotate(35deg);
+  transform: rotate(25deg);
   overflow: hidden;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .image {
-  width: 120%;
-  height: 115%;
+  padding-bottom: 40rem;
+  padding-left: 7rem;
+  width: 120%; 
+  height: 110%;
   object-fit: cover;
-  transform: rotate(-35deg);
+  transform: rotate(-25deg);
 }
 
 .about-container {
   margin-top: 14rem;
-  margin-left: 2rem;
+  margin-left: 4rem;
   max-width: 35%;
 }
 
