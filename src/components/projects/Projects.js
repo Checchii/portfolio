@@ -3,6 +3,8 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./projects.css";
 
+
+// list of projects
 const projects = [
     {
         title: 'Dungeons of Aria',
@@ -31,7 +33,7 @@ const Projects = () => {
     return (
         <div className="projects-section">
             <section id="projects">
-            <h2>Projects:</h2>
+            <h2>Projects</h2>
             <Carousel showThumbs={false} infiniteLoop useKeyboardArrows autoPlay>
                 {projects.map((project, index) => (
                     <div key={index} className="project">
