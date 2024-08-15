@@ -6,6 +6,7 @@ import AboutMe from '../components/about/AboutMe';
 import '../App.css';
 import Projects from '../components/projects/Projects';
 import Skills from '../components/skills/Skills';
+import Footer from '../components/footer/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         </Routes>
         <Projects />
         <Skills />
+        <Footer />
       </div>
     </Router>
   );

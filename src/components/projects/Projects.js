@@ -3,7 +3,6 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./projects.css";
 
-
 // list of projects
 const projects = [
     {
@@ -14,19 +13,22 @@ const projects = [
     },
     {
         title: "House Pricing Prediction Model",
+        image: '',
         description: "Developed a machine learning model to predict house prices using linear and polynomial regression.",
         tools: ["- Pandas", "- NumPy", "- Matplotlib", "- Seaborn", "- Scikit-learn"]
     },
     {
         title: "Any City Weather App",
+        image: './any-city-weather-app.png',
         description: "Contributed to the development of a weather application by leveraging my Python skills through Flask."
     },
     {
         title: "Case Closed",
+        image: '',
         description: "Developed a crime-solving game in Unity inspired by Sherlock Holmes."
     }
 
-]
+];
 
 
 const Projects = () => {
