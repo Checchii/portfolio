@@ -7,7 +7,7 @@ import "./projects.css";
 const projects = [
     {
         title: 'Dungeons of Aria',
-        video: "./dungeonsofaria.mp4",
+        video: "",
         description: `"Dungeons of Aria" is a fantasy RPG where players explore dungeons, solve puzzles, and engage in strategic combat.`,
         link: "https://gx.games/games/9cvjkm/dungeons-of-aria/tracks/d83ec71e-52bc-4ebb-adbc-53ca6dc23ddb"
     },
