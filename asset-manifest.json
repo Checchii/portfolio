@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.89aa0037.css",
+    "main.js": "/react-portfolio/static/js/main.3496bf5a.js",
+    "static/media/me.jpg": "/react-portfolio/static/media/me.4ddd8b3c254cccd2ff58.jpg",
+    "static/media/sebastian-logo.png": "/react-portfolio/static/media/sebastian-logo.9eaf97e6e2f33542ca1f.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.89aa0037.css.map": "/react-portfolio/static/css/main.89aa0037.css.map",
+    "main.3496bf5a.js.map": "/react-portfolio/static/js/main.3496bf5a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89aa0037.css",
+    "static/js/main.3496bf5a.js"
+  ]
+}
