@@ -1,28 +1,16 @@
 #skills-container {
-    justify-content: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 2rem; 
+    padding: 1rem;
 }
 
-.skill-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #333; /* Change to the color you want */
-    transition: transform 0.3s ease;
-}
-
-.skill:hover .skill-icon {
-    transform: scale(1.2);
-    cursor: pointer;
-}
-
-.skills-title {
-    color: #555;
+h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.8rem;
-    line-height: 1.2;
-    text-align: center;
+    color: #555;
     margin-top: 4rem;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -31,58 +19,46 @@
 .skill {
     position: relative;
     text-align: center;
-    margin-top: 1.6rem;
-}
-
-.skill i {
-    font-size: 2.5rem;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
     transition: transform 0.3s ease;
 }
 
-.skill:hover i {
-    transform: scale(1.2);
-    cursor: pointer;
+.skill-icon {
+    font-size: 3rem;
+    color: #333;
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-.tooltip {
+.proficiency-circle {
     position: absolute;
-    bottom: -50px;
-    left: 50%;
-    transform: translateX(-50%);
-    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 6px solid #76c781;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transform: rotate(0deg);
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-.skill:hover .tooltip {
-    visibility: visible;
+.skill:hover .skill-icon {
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+
+.skill:hover .proficiency-circle {
+    transform: rotateY(0deg);
     opacity: 1;
 }
 
-.tooltiptext {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px;
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    z-index: 1;
-}
-
-.proficiency-bar {
-    width: 100%;
-    background-color: #ddd;
-    height: 5px;
-    border-radius: 5px;
-    margin-top: 5px;
-}
-
-.proficiency-level {
-    height: 100%;
-    background-color: #4caf50;
-    border-radius: 5px;
+.proficiency-text {
+    font-size: 1.5rem;
+    color: #333;
 }

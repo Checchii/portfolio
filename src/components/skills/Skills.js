@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faJs, faReact, faGitAlt, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { motion } from 'framer-motion';
 import "./skills.css";
 
 const skills = [
@@ -13,19 +14,29 @@ const skills = [
 ];
 
 const Skills = () => {
+    const [selectedSkill, setSelectedSkill] = useState(null);
+
+    const handleSkillClick = (index) => {
+        setSelectedSkill(selectedSkill === index ? null : index);
+    };
+
     return (
         <div className="skills-section">
             <section id="skills">
-                <h2 className="skills-title">Skills</h2>
+                <h2>Skills</h2>
                 <div id="skills-container">
                     {skills.map((skill, index) => (
-                        <div key={index} className="skill">
-                            <FontAwesomeIcon icon={skill.icon} title={skill.name} className="skill-icon" />
-                            <div className="tooltip">
-                                <span className="tooltiptext">{skill.name}</span>
-                                <div className="proficiency-bar">
-                                    <div className="proficiency-level" style={{ width: skill.level }}></div>
-                                </div>
+                        <div key={index} className="skill" onClick={() => handleSkillClick(index)}>
+                            <FontAwesomeIcon icon={skill.icon} className="skill-icon" />
+                            <div className="proficiency-circle">
+                                <motion.span 
+                                    className="proficiency-text"
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    transition={{ duration: 0.5 }}
+                                >
+                                    {skill.level}
+                                </motion.span>
                             </div>
                         </div>
                     ))}
