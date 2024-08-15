@@ -8,7 +8,7 @@ const Navigation = () => {
         <nav className="navbar">
             <div className="nav-container">
                 <Link to="/" className="nav-logo">
-                Sebastian.
+                    <img src={require('./sebastian-logo.png')} alt="" className="logo"></img>
                 </Link>
             </div>
         </nav>
