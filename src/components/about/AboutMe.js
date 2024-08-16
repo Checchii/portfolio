@@ -19,9 +19,11 @@ const AboutMe = () => {
                 <p className="about">I'm a software engineer that enjoys solving complex problems and bringing innovative products to life.</p>
             </div>
             <div className="contact-social-container">
-                <button type="submit" className="contact-me">
-                    <FontAwesomeIcon icon={faArrowRight} /> Get in touch
-                </button>
+                <a href="mailto:sebastian.checchi@gmail.com?subject=Hello%20from%20Your%20Portfolio&body=Hi%20Sebastian,%0D%0A%0D%0AI%20visited%20your%20portfolio%20and%20wanted%20to%20get%20in%20touch.%0D%0A%0D%0ABest%20regards,">
+                    <button type="submit" className="contact-me">
+                        <FontAwesomeIcon icon={faArrowRight} /> Get in touch
+                    </button>
+                </a>
                 <div className="social">
                     <span className="linked-in">
                         <Link to="https://linkedin.com/in/sebastian-checchi/" target="_blank" className="icons">
