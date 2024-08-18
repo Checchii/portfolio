@@ -8,8 +8,8 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
-
 
 .footer-socials {
     display: flex;
@@ -36,4 +36,37 @@
 .footer-social-button:active {
     color: #9c9c9c;
     background-color: #f0f0f0;
+}
+
+.copyright {
+    color: #9c9c9c;
+    margin-top: 4rem;
+    text-align: center; /* Center text alignment */
+    width: 100%; /* Full width to ensure proper spacing */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: row; /* Stack elements vertically on smaller screens */
+        align-items: flex-start; /* Center items horizontally */
+        text-align: center; /* Center align text */
+    }
+
+    .footer-socials {
+        margin-right: 0; /* Remove margin-right for better alignment */
+        margin-top: 1rem; /* Add margin-top to separate from copyright text */
+    }
+
+    .copyright {
+        margin-bottom: 1rem; /* Reduce margin-top to avoid excess space */
+        font-size: .8rem;
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        padding: 1rem 0; /* Adjust padding for smaller screens */
+    }
 }

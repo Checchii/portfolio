@@ -12,6 +12,9 @@ const Footer = () => {
                 <span className="logo">
                     <Navigation />
                 </span>
+                <span>
+                    <p className="copyright">© All rights reserved.</p>
+                </span>
                 <div className="footer-socials">
                     <span className="footer-social-button ">
                         <Link to="https://linkedin.com/in/sebastian-checchi/" target="_blank" className="icons">
