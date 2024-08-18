@@ -5,27 +5,61 @@
 }
 
 .navbar {
-    padding: 10px 20px;
-  }
-  
-  .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
+  padding: 10px 20px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
+.nav-logo {
+  color: #2b2b2b;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  margin-top: 3rem;
+  margin-left: 5rem;
+}
+
+.nav-logo:hover {
+  color: #535353;
+}
+
+.logo {
+  max-width: 9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
   .nav-logo {
-    color: #2b2b2b;
-    font-family: "Poppins", sans-serif;
-    text-decoration: none;
-    margin-top: 3rem;
-    margin-left: 5rem;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    font-size: 1.5rem; /* Adjusted font size for smaller screens */
   }
-  
-  .nav-logo:hover {
-    color: #535353;
-  }
-  
+
   .logo {
-    max-width: 9rem;
+    max-width: 7rem; /* Adjusted logo size for smaller screens */
   }
+
+  .navbar {
+    padding: 8px 15px; /* Reduced padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-logo {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 1.2rem; /* Further adjusted font size for very small screens */
+  }
+
+  .logo {
+    max-width: 5rem; /* Further adjusted logo size for very small screens */
+  }
+
+  .navbar {
+    padding: 5px 10px; /* Further reduced padding */
+  }
+}

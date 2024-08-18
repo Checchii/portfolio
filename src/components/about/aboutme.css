@@ -12,7 +12,7 @@
   margin-top: 2rem;
   margin-left: 15rem;
   width: 380px; 
-  height: 550px;
+  height: auto;
   border: 20px solid hsla(0, 0%, 90%, 40%);
   border-radius: 45%;
   padding: 0px;
@@ -94,38 +94,8 @@
   color: #9c9c9c;
 }
 
-.linked-in {
-  padding: 14px;
-  border: 2px solid hsla(0, 0%, 80%, 30%);
-  border-radius: 50%;
-  color: #9c9c9c;
-  background-color: #f0f0f0;
-  text-align: center;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease; 
-}
-
-.linked-in:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
-.github {
-  padding: 14px;
-  border: 2px solid hsla(0, 0%, 80%, 30%);
-  border-radius: 50%;
-  color: #9c9c9c;
-  background-color: #f0f0f0;
-  text-align: center;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease; 
-}
-
-.github:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
+.linked-in,
+.github,
 .instagram {
   padding: 14px;
   border: 2px solid hsla(0, 0%, 80%, 30%);
@@ -137,8 +107,92 @@
   transition: transform 0.3s ease; 
 }
 
+.linked-in:hover,
+.github:hover,
 .instagram:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-container {
+    margin-top: 4rem;
+    margin-left: 1rem;
+    max-width: 70%;
+  }
+
+
+  .about-me {
+    margin-right: 2rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .contact-social-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-left: 2rem;
+  }
+
+  .contact-me {
+    width: 100%;
+    text-align: center;
+  }
+
+  .social {
+    margin-left: 0;
+  }
+
+  /* Move header image below the buttons */
+  .about-image-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .header-image {
+    margin-top: 2rem;
+    margin-left: 0.2rem;
+    max-width: 260px; 
+    border: 20px solid hsla(0, 0%, 90%, 40%);
+    border-radius: 48%;
+    overflow: hidden;
+    height: auto; 
+    transform: rotate(20deg); 
+  }
+  
+  .image {
+    width: 120%;
+    height: 140%;
+    object-fit: fill;
+    padding-bottom: 0rem;
+    padding-left: 0rem;
+    transform: rotate(-20deg); 
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    margin-top: 5rem;
+    margin-left: 1rem;
+    max-width: 90%;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .about-me {
+    font-size: 16px;
+    padding-left: 1rem;
+  }
+
+  /* Further adjust for small mobile screens */
+  .header-image {
+    max-width: 250px;
+  }
+}
