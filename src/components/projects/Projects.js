@@ -2,32 +2,31 @@ import React from "react";
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./projects.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+
 
 // list of projects
 const projects = [
     {
         title: 'Dungeons of Aria',
-        video: "",
         description: `"Dungeons of Aria" is a fantasy RPG where players explore dungeons, solve puzzles, and engage in strategic combat.`,
-        link: "https://gx.games/games/9cvjkm/dungeons-of-aria/tracks/d83ec71e-52bc-4ebb-adbc-53ca6dc23ddb"
+        link: "https://gx.games/games/9cvjkm/dungeons-of-aria/tracks/d83ec71e-52bc-4ebb-adbc-53ca6dc23ddb",
+        github: "https://github.com/Checchii/DungeonsOfAria"
     },
     {
         title: "House Pricing Prediction Model",
         image: '',
         description: "Developed a machine learning model to predict house prices using linear and polynomial regression.",
-        tools: ["- Pandas", "- NumPy", "- Matplotlib", "- Seaborn", "- Scikit-learn"]
+        tools: ["- Pandas", "- NumPy", "- Matplotlib", "- Seaborn", "- Scikit-learn"],
+        github: "https://github.com/Checchii/ML-House-Prediction-Model"
     },
     {
         title: "Any City Weather App",
         image: './any-city-weather-app.png',
-        description: "Contributed to the development of a weather application by leveraging my Python skills through Flask."
+        description: "Contributed to the development of a weather application by leveraging my Python skills through Flask.",
+        github: "https://github.com/Checchii/mercyweatherapp",
     },
-    {
-        title: "Case Closed",
-        image: '',
-        description: "Developed a crime-solving game in Unity inspired by Sherlock Holmes."
-    }
-
 ];
 
 
@@ -40,12 +39,6 @@ const Projects = () => {
                 {projects.map((project, index) => (
                     <div key={index} className="project">
                         <h3>{project.title}</h3>
-                        {project.video && (
-                            <video width="640" height="360" controls autoPlay>
-                                <source src={project.video} type="video/mp4" />
-                                Your browser does not support the video tag.
-                            </video>
-                        )}
                         <p className="project-description">{project.description}</p>
                         {project.tools && (
                             <div>
@@ -62,6 +55,17 @@ const Projects = () => {
                                 Play Now
                             </a>
                         )}
+                        {project.github && (
+                        <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="button github-button"
+                        >
+                            <FontAwesomeIcon icon={faGithub} style={{ marginRight: "8px" }} />
+                            View Repository
+                        </a>
+                    )}
                     </div>
                 ))}
             </Carousel>

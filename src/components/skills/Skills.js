@@ -7,7 +7,7 @@ import "./skills.css";
 const skills = [
     { name: 'HTML5', icon: faHtml5, level: '90%' },
     { name: 'CSS', icon: faCss3Alt, level: '80%' },
-    { name: 'JavaScript', icon: faJs, level: '70%' },
+    { name: 'JavaScript', icon: faJs, level: '80%' },
     { name: 'React', icon: faReact, level: '70%' },
     { name: 'Git', icon: faGitAlt, level: '90%' },
     { name: 'GitHub', icon: faGithub, level: '90%' },
