@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.ed5733ce.css",
-    "main.js": "/static/js/main.ec566936.js",
+    "main.css": "/static/css/main.6a73e623.css",
+    "main.js": "/static/js/main.aee36d14.js",
     "static/media/me.jpg": "/static/media/me.4ddd8b3c254cccd2ff58.jpg",
     "static/media/sebastian-logo.png": "/static/media/sebastian-logo.9eaf97e6e2f33542ca1f.png",
     "index.html": "/index.html",
-    "main.ed5733ce.css.map": "/static/css/main.ed5733ce.css.map",
-    "main.ec566936.js.map": "/static/js/main.ec566936.js.map"
+    "main.6a73e623.css.map": "/static/css/main.6a73e623.css.map",
+    "main.aee36d14.js.map": "/static/js/main.aee36d14.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed5733ce.css",
-    "static/js/main.ec566936.js"
+    "static/css/main.6a73e623.css",
+    "static/js/main.aee36d14.js"
   ]
 }
